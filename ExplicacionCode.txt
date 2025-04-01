@@ -1,0 +1,64 @@
+Archivo: array.php
+- Linea 3: Se crea un array que almacena strings (en este caso meses) y se almacenan en la variable "mes"
+- Linea 4: Agrega un nuevo valor al array, que al no especificarse su indice ($mes[]) se agrega 
+  al final del array
+- Linea 5: Se muestra por consola el array
+- Linea 6: Se almacena en una variable un valor del array para eliminar ($mesEliminar = "Enero";)
+- Linea 7: Se crea una llave. Su funcion es buscar en el array un determinado valor (en este caso la variable
+  anterior), retornando un valor true o false, en caso de encontrarlo o no
+- Linea 8-10: Un if que evalua si la llave retorna un valor true o false. En caso de no ser falso, se llama a la funcion
+  unset que elimina un valor del array, en este caso "Enero"
+- Linea 11: Mostar array para visualizar cambios
+
+Archivo: arrayConcatenar.php
+- Linea 2-3: Se crean dos arrays que almacenan diferentes datos de tipo string
+- Linea 5: Se ejecuta la funcion array_merge() para unir los dos arrays y este nuevo array se guarda en $datosConbinados
+- Linea 7: Mostar array conbinado para visualizar cambios
+
+Archivo: arrayExtraer.php
+- Linea 3: Tomando el array creado en la linea 2, se usa array_slice para extraer una parte del array como un array
+  nuevo que toma los valores empezando desde el indice 2.
+  El array slice puede tomar 4 parametros: El array, el indice de inicio (si es negativo se tomaran los vaalores
+  empezando por el final del array), indice donde termina y preserve_keys que si se pone en true guarda los indices
+- Linea 4-5: Mostar arrays para visualizar cambios
+- Linea 7: Se usa otro array_slice que toma los valores desde el indice 2 hasta el final y como ultimo parametro 
+  se deja true, para que el nuevo array conserve sus indices que tenian en su array de origen
+- Linea 8: Mostar array para visualizar los cambios que genera el parametro preserve_keys
+
+Archivo: arrayModificacion.php
+- Linea 2: Se crea un array que almacena nombres de planetas
+- Linea 3: Se agrega un valor al array en el indice 0 por lo que lo reemplazaba por el valor que estaba
+- Linea 4: Se agrega un valor al array
+- Linea 5: Mostar array para visualizar cambios
+- Linea 6: se usa unset para eliminar el valor que esta en el indice 1 del array
+- Linea 7: Mostar array para visualizar cambios
+
+Archivo: filtrarArreglos.php
+- Linea 3: Se crea un array de enteros
+- Linea 4-6: Se usa un array_filter, donde como parametro se crea una funcion que retorna valores mayores a 3
+- Linea 7: Mostar array para visualizar cambios, retornando solo valores mayores a 3
+
+Archivo: filtrarStringArray.php
+- Linea 2: Se crea un array con nombres 
+- Linea 3: La funcion asort ordena los valores, en este caso alfabeticamente
+- Linea 5-7: Se usa array_filter, donde como parametro se crea una funcion que usa strpos que lo hace es 
+  encontrar la posición de la primera aparicion de un substring en un string. En este caso retorna los nombres
+  que empizan por J
+- Linea 8: Mostar array para visualizar cambios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
